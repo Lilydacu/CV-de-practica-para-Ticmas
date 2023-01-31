@@ -1,0 +1,114 @@
+*{
+
+  box-sizing: border-box;
+  
+}
+
+body{
+  font-family: 'Roboto Slab', serif;
+}
+.contenedor{
+  width: auto;
+ display: flex;
+}
+.columna1{
+  width: 30%;
+  margin-left: auto;
+  background-color: #856966;
+}
+
+img{
+  margin-left: 10%;
+  border-radius: 50%;
+}
+button{
+  margin-left: 20%;
+  background-color:#856966;
+  position: sticky;
+  height: 50px;
+  width: 150px;
+   border: solid #cab4a8 ;
+  font-size: 15px;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+button:hover{
+  background-color: rgb(46,46,46);
+}
+button::before{
+  position: absolute;
+  background-color: #856966;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  height: 0PX;
+  width: 0PX;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+button:hover::before{
+  height: 350px;
+  width: 350px;
+}
+button::after{
+  content:'CONTÁCTAME';
+  position: relative;
+  z-index: 1;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.columna2 {
+  position: relative;
+  margin: auto;
+  width: 100%;
+ background-color:#cab4a8;
+  
+ 
+}
+h1{
+
+  font-size:1.5cm;
+    text-align:center;
+    height: 25px;
+     margin-left:90px;
+      width: 450px;
+    
+  }
+ 
+  h3{
+    font-size: 0.5cm;
+    padding-top: 9px;
+  }
+  p{
+    text-indent: 1.2em;
+    height: 40px;
+    text-align: justify;
+    width: 690px;
+    padding: 60px;
+  }
+  
+   section{
+     width: 75%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section :hover{
+    background: #dba990;
+  }
+  
+  
+  summary{
+    background: #856966;
+    padding: 20px;
+
+   
+    }
+    
+    
